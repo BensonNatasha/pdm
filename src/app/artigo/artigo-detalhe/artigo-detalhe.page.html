@@ -1,15 +1,10 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Artigos
-    </ion-title>
+    <ion-title>Detalhe do artigo</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-list>
-    <button ion-item *ngFor="let artigo of artigos" (click)="abrirArtigo(artigo)">
-
+<ion-content >
       <ion-card>
         <ion-card-header>
           <ion-card-subtitle>{{ artigo.data }}</ion-card-subtitle>
@@ -21,8 +16,5 @@
          </span> 
         </ion-card-content>
         <p>{{ artigo.autor }}</p>
-      </ion-card>
-
-    </button>
-  </ion-list>
-</ion-content>
+      </ion-card>  
+ </ion-content>
